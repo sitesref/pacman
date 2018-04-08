@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!-- KEEP IN SAME FOLDER AS PACMAN SOFTWARE !!! -->
 <config>
 	<connectionString>(DESCRIPTION =    (ADDRESS = (PROTOCOL = TCP)(HOST = 158.167.231.96)(PORT = 1597))    (CONNECT_DATA =      (SERVER = DEDICATED)      (SERVICE_NAME = M07NESTP_TAF.cc.cec.eu.int)    )  )</connectionString>
