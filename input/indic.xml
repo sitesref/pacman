@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<indicators>
+		<indicator tableName="NAMA_10_GDP" reportType="YEAR" enabled="TRUE"/>
+		<indicator tableName="EI_BPM6CA_Q" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="EI_BPM6FA_Q" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="EI_BPM6IIP_Q" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="EI_BSBU_Q_R2" reportType="QUARTER" enabled="TRUE"/>
+		
+		<!-- ici -->
+		<indicator tableName="EI_BSCO_Q" reportType="QUARTER" enabled="TRUE"/>
+		
+		<indicator tableName="EI_BSFS_Q" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="EI_BSIN_Q_R2" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="EI_HPPI_Q" reportType="QUARTER" enabled="TRUE"/>
+		
+		<indicator tableName="EI_ISBU_Q" reportType="QUARTER" enabled="TRUE"/>
+		
+		<indicator tableName="EI_ISIN_Q" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="EI_ISPPE_Q" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="EI_ISPPI_Q" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="EI_ISRT_Q" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="EI_ISSE_Q" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="EI_ISSET_Q" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="EI_LMJV_Q_R2" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="EI_LMLC_Q" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="NASQ_10_NF_TR" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="NASQ_10_KI" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="NAMQ_10_GDP" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="NAMQ_10_FCS" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="NAMQ_10_EXI" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="NAMQ_10_AN6" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="NAMQ_10_A10_E" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="NAMQ_10_A10" reportType="QUARTER" enabled="TRUE"/>
+		<indicator tableName="EI_BPM6CA_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_BPM6FA_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_BSBU_M_R2" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_BSCI_M_R2" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_BSCO_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_BSFS_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_BSIN_M_R2" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_BSRT_M_R2" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_BSSE_M_R2" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_BSSI_M_R2" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_CPHI_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_ETEA19_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_ETEU28_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_ISBR_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_ISBU_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_ISEN_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_ISIN_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_ISRR_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_ISRT_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_LMHR_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_LMHU_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_MFEF_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_MFIR_M" reportType="MONTH" enabled="TRUE"/>
+		<indicator tableName="EI_MFRT_M" reportType="MONTH" enabled="TRUE"/>
+</indicators>

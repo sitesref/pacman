@@ -1,0 +1,45 @@
+body {
+	 background-color:#000;
+	 color:#FFF;
+}
+
+a {
+	color: #0FF;
+}
+
+.ok {
+	color: #009900;
+}
+
+.finished {
+	color: #00F;
+}
+
+.error {
+	color: #F00;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: digital7;
+	src: url(../fonts/digital-7.ttf);
+}
+
+.counter {
+	background-color:#FFFFFF;
+	position:absolute;
+	top:20px;
+	right:20px;
+	font-size:1000%;
+	font-family:digital7;
+	clear: both;
+}
+
+.working {
+	color:#F00;
+}
+
+.done {
+	color: #00F;
+}
+

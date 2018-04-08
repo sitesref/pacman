@@ -1,0 +1,24 @@
+// liste des codes des indicateurs
+
+tableau[CODE_INDICATEUR]["FREQ"] = Y,Q,M
+tableau[CODE_INDICATEUR]["CREATION_VIEW"] = instruction
+tableau[CODE_INDICATEUR]["EXTRACT_REPORT_FROM_VIEW"] = instruction
+
+instruction: décomposition
+	for time in ( XXXXXXXXXX  ))
+	
+			'2018M02','2018M01','2017M12'
+	
+	2017 -> 1950 (par ex)
+	2017Q4 -> 1992Q4 (par ex)
+	2018M02 -> 1980M01 (par ex)
+
+	$indic
+	
+	
+
+		
+		
+		
+		
+
