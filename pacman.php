@@ -11,7 +11,8 @@
 
 ================================================================<br/>
 Pacman - N. Nachtergaele@SOGETI<br/>
-v 0.1 - 29/03/2018<br/>
+v 0.1 - v.29/03/2018<br/>
+Current date and time: <?php echo date("d/m/Y H:i:s"); ?><br/>
 ================================================================<br/>
 
 <div id="msg1" name="msg1"></div>
@@ -45,6 +46,7 @@ try {
 	// DATA LOADING
 	$loader->loadConfig();
 	$interf->message(interf::MSG_OK, "msg1", " Loading CONFIG... OK");
+	$interf->message(interf::MSG_OK, "msg1", " Asked year and month: " . $loader->getConfig("askedYear") . "-" . $loader->getConfig("askedMonth"));
 	
 	$loader->loadIndicators();
 	$str = implode(", ",$loader->getIndicArray());
@@ -56,8 +58,10 @@ try {
 	$loader->loadExtractReportFromView();
 	$interf->message(interf::MSG_OK, "msg1", " Loading EXTRACT_REPORT_FROM_VIEW.SQL... OK"); 
 	
-	$loader->checkArray();
+	$loader->checkArray($loader->getConfig("askedYear"),$loader->getConfig("askedMonth"));
 	$interf->message(interf::MSG_OK, "msg1", " Checking array... OK");
+
+	exit();
 
 	$loader->checkOutputFolder();
 	$interf->message(interf::MSG_OK, "msg1", " Output folder... OK (" . str_replace(DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR . DIRECTORY_SEPARATOR, $loader->getConfig("outputFolder")) . ")");
@@ -128,6 +132,11 @@ catch(NoSQLException $nse) {
 	$interf->message(interf::MSG_ERROR, "msg1", " NoSQLException: " . $nse->getMessage());
 	exit();
 }
+catch(BadIntervalException $bie) {
+	$interf->message(interf::MSG_ERROR, "msg1", " BadIntervalException: " . $bie->getMessage());
+	exit();
+}
+
 catch(Exception $e) {
 	$interf->message(interf::MSG_ERROR, "msg1", " Unknown exception: " . $e->getMessage());
 	exit();

@@ -1,5 +1,6 @@
 // liste des codes des indicateurs
 
+tableau[CODE_INDICATEUR]["code"] = "NAMA_10_GDP"
 tableau[CODE_INDICATEUR]["FREQ"] = Y,Q,M
 tableau[CODE_INDICATEUR]["CREATION_VIEW"] = instruction
 tableau[CODE_INDICATEUR]["EXTRACT_REPORT_FROM_VIEW"] = instruction

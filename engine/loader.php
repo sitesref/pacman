@@ -4,6 +4,7 @@ include realpath(__DIR__ . "/../exception") . "/FileLoadException.php";
 include realpath(__DIR__ . "/../exception") . "/FolderWriteException.php";
 include realpath(__DIR__ . "/../exception") . "/NoIndicException.php";
 include realpath(__DIR__ . "/../exception") . "/NoSQLException.php";
+include realpath(__DIR__ . "/../exception") . "/BadIntervalException.php";
 include "xmlLoader.php";
 
 define("CONFIG_XML_FILEPATH",  realpath(__DIR__ . "/../config") . DIRECTORY_SEPARATOR  . "/config.xml");
@@ -150,12 +151,13 @@ class loader {
 			throw new FolderWriteException("OUTPUT FOLDER IS READ ONLY");
 	}
 	//--------------------------------------------------------------------------
-	public function checkArray() {
+	public function checkArray($askedYear,$askedMonth) {
 		if(count($this->indicArray) == 0) {
 			throw new NoIndicException("NO INDICATOR PROVIDED IN INDIC XML FILE!");
 		} else {
 			
 			foreach($this->indicArray as $indicator) {
+				
 				if(empty($indicator->getCreationViewInstruction()))
 					throw new NoSQLException($indicator->getCode() . ": CREATION VIEW - SQL INSTRUCTION MISSING !");
 				if(empty($indicator->getCreationViewTimeInterval()))
@@ -164,6 +166,12 @@ class loader {
 					throw new NoSQLException($indicator->getCode() . ": EXTRACT FROM VIEW - SQL INSTRUCTION MISSING !");
 				if(empty($indicator->getExtractFromViewTimeInterval()))
 					throw new NoSQLException($indicator->getCode() . ": EXTRACT FROM VIEW -  TIME INTERVAL MISSING !");
+				
+				if($indicator->getCreationViewTimeInterval()->checkInterval($indicator->getFrequency(), $askedYear, $askedMonth) === 0)
+					throw new BadIntervalException($indicator->getCode() . ": INTERVAL ERROR IN CREATION VIEW !");
+				
+				if($indicator->getExtractFromViewTimeInterval()->checkInterval($indicator->getFrequency(), $askedYear, $askedMonth) === 0)
+					throw new BadIntervalException($indicator->getCode() . ": INTERVAL ERROR IN EXTRACT FROM VIEW !");
 			}
 		}
 	}
