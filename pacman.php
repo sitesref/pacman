@@ -61,8 +61,6 @@ try {
 	$loader->checkArray($loader->getConfig("askedYear"),$loader->getConfig("askedMonth"));
 	$interf->message(interf::MSG_OK, "msg1", " Checking array... OK");
 
-	exit();
-
 	$loader->checkOutputFolder();
 	$interf->message(interf::MSG_OK, "msg1", " Output folder... OK (" . str_replace(DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR . DIRECTORY_SEPARATOR, $loader->getConfig("outputFolder")) . ")");
 	

@@ -167,11 +167,13 @@ class loader {
 				if(empty($indicator->getExtractFromViewTimeInterval()))
 					throw new NoSQLException($indicator->getCode() . ": EXTRACT FROM VIEW -  TIME INTERVAL MISSING !");
 				
+				/*
 				if($indicator->getCreationViewTimeInterval()->checkInterval($indicator->getFrequency(), $askedYear, $askedMonth) === 0)
 					throw new BadIntervalException($indicator->getCode() . ": INTERVAL ERROR IN CREATION VIEW !");
 				
 				if($indicator->getExtractFromViewTimeInterval()->checkInterval($indicator->getFrequency(), $askedYear, $askedMonth) === 0)
 					throw new BadIntervalException($indicator->getCode() . ": INTERVAL ERROR IN EXTRACT FROM VIEW !");
+				*/
 			}
 		}
 	}
