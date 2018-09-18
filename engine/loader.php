@@ -7,7 +7,7 @@ include realpath(__DIR__ . "/../exception") . "/NoSQLException.php";
 include realpath(__DIR__ . "/../exception") . "/BadIntervalException.php";
 include "xmlLoader.php";
 
-define("CONFIG_XML_FILEPATH",  realpath(__DIR__ . "/../config") . DIRECTORY_SEPARATOR  . "/config.xml");
+define("CONFIG_XML_FILEPATH",  realpath(__DIR__ . "/../config") . DIRECTORY_SEPARATOR  . "config.xml");
 
 class loader {
 	
